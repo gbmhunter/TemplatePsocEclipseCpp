@@ -1,0 +1,20 @@
+23:43:26 **** Incremental Build of configuration Debug for project TestProjectCpp.cydsn ****
+make pre-build main-build 
+"../Generated_Source/PSoC5/prebuild.bat"
+' '
+'Building file: ../main.cpp'
+'Invoking: Cross G++ Compiler'
+arm-none-eabi-g++ -DDEBUG -I"C:\Users\gbmhunter\GoogleDrive\Projects\TemplatePsocEclipseCpp\TestProjectCpp.cydsn" -I"C:\Users\gbmhunter\GoogleDrive\Projects\TemplatePsocEclipseCpp\TestProjectCpp.cydsn\Generated_Source\PSoC5" -O2 -ffunction-sections -g -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+'Finished building: ../main.cpp'
+' '
+'Building target: TestProjectCpp.cydsn'
+'Invoking: Cross G++ Linker'
+arm-none-eabi-g++ -T ../Generated_Source/PSoC5/cm3gcc.ld -specs=nano.specs -march=armv7-m -mthumb -mfix-cortex-m3-ldrd -Xlinker --gc-sections -o "TestProjectCpp.cydsn"  ./Generated_Source/PSoC5/Cm3Start.o ./Generated_Source/PSoC5/CyBootAsmGnu.o ./Generated_Source/PSoC5/CyDmac.o ./Generated_Source/PSoC5/CyFlash.o ./Generated_Source/PSoC5/CyLib.o ./Generated_Source/PSoC5/CyPinLedPower.o ./Generated_Source/PSoC5/CySpc.o ./Generated_Source/PSoC5/cyPm.o ./Generated_Source/PSoC5/cyfitter_cfg.o ./Generated_Source/PSoC5/cymetadata.o ./Generated_Source/PSoC5/cyutils.o  ./main.o  C:/Users/gbmhunter/GoogleDrive/Projects/TemplatePsocEclipseCpp/TestProjectCpp.cydsn/Generated_Source/PSoC5/ARM_GCC/CyComponentLibrary.a 
+'Finished building target: TestProjectCpp.cydsn'
+' '
+make --no-print-directory post-build
+"../Generated_Source/PSoC5/postbuild.bat" "../../Debug/TestProjectCpp.cydsn"
+' '
+
+23:43:27 Build Finished (took 1s.32ms)
+
